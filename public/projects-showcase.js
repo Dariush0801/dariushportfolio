@@ -229,12 +229,6 @@
       });
     }
 
-    // Drag-to-scroll support for slides with tall mockups
-    let isMouseDown = false;
-    let startY = 0;
-    let scrollStartTop = 0;
-    let hasDragged = false;
-
     if (carousel) {
       // Pause on hover
       carousel.addEventListener('mouseenter', () => {
@@ -244,42 +238,12 @@
 
       carousel.addEventListener('mouseleave', () => {
         isHovering = false;
-        isMouseDown = false;
         startAutoPlay();
       });
 
-      carousel.addEventListener('mousedown', (e) => {
-        if (e.target.closest('.carousel-nav-btn')) return;
-        const slide = e.target.closest('.carousel-slide');
-        if (!slide) return;
-        isMouseDown = true;
-        hasDragged = false;
-        startY = e.pageY;
-        scrollStartTop = slide.scrollTop;
-      });
-
-      window.addEventListener('mousemove', (e) => {
-        if (!isMouseDown) return;
-        const activeSlide = track.querySelector(`.carousel-slide[data-index="${currentSlide}"]`);
-        if (!activeSlide) return;
-        const walk = (e.pageY - startY) * 1.5;
-        if (Math.abs(walk) > 4) {
-          hasDragged = true;
-        }
-        activeSlide.scrollTop = scrollStartTop - walk;
-      });
-
-      window.addEventListener('mouseup', () => {
-        isMouseDown = false;
-      });
-
-      // Tap / Click to open fullscreen lightbox (only if not dragging)
+      // Tap / Click to open fullscreen lightbox
       carousel.addEventListener('click', (e) => {
         if (e.target.closest('.carousel-nav-btn')) return;
-        if (hasDragged) {
-          hasDragged = false;
-          return;
-        }
         openLightbox(currentSlide);
       });
     }
