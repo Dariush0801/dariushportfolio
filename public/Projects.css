@@ -295,31 +295,6 @@
   right: 8px;
 }
 
-/* Hover Fullscreen Hint */
-.carousel-tap-hint {
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-  padding: 4px 9px;
-  border-radius: 4px;
-  background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  font-size: 11px;
-  color: #e4e4e7;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.project-carousel:hover .carousel-tap-hint {
-  opacity: 1;
-}
-
 /* Dots Indicator Bar */
 .carousel-indicator-bar {
   padding: 8px 12px;
