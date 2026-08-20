@@ -145,6 +145,29 @@
   color: var(--text-primary, #f4f5f8);
 }
 
+.project-live-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono, monospace);
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 4px;
+  background: rgba(14, 165, 233, 0.12);
+  border: 1px solid rgba(14, 165, 233, 0.35);
+  color: var(--primary, #0ea5e9);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.project-live-pill-btn:hover {
+  background: var(--primary, #0ea5e9);
+  color: #ffffff;
+  border-color: var(--primary, #0ea5e9);
+  box-shadow: 0 0 10px var(--primary-glow);
+}
+
 .project-tag.tag-more {
   cursor: help;
   color: var(--text-muted, #6b7280);
@@ -466,6 +489,73 @@
   color: var(--text-primary, #f4f5f8);
 }
 
+/* Action CTA Group (Visit Live Project, Source Code) */
+.project-actions-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.project-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.project-live-cta {
+  background: var(--primary, #0ea5e9);
+  color: #ffffff;
+  border: 1px solid var(--primary, #0ea5e9);
+  flex: 1.2;
+  min-width: 150px;
+}
+
+.project-live-cta:hover {
+  background: #0284c7;
+  border-color: #0284c7;
+  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.4);
+}
+
+.project-source-cta {
+  background: var(--bg-card-subtle, #121418);
+  color: var(--text-primary, #f4f5f8);
+  border: 1px solid var(--border-strong, rgba(255, 255, 255, 0.18));
+  flex: 1;
+  min-width: 130px;
+}
+
+.project-source-cta:hover {
+  background: var(--bg-surface-hover, #1c1f26);
+  border-color: var(--primary, #0ea5e9);
+  color: var(--primary, #0ea5e9);
+}
+
+@media (max-width: 560px) {
+  .project-actions-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .project-action-btn {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 16px;
+    font-size: 13.5px;
+  }
+}
+
 /* ─────────────────────────────────────────────────────────────────────────────
    Full Screen Lightbox Modal for Project Screenshots
 ───────────────────────────────────────────────────────────────────────────── */
@@ -687,3 +777,37 @@ body.light-mode .meta-box-label {
 body.light-mode .meta-box-value {
   color: #0a0a0a;
 }
+
+body.light-mode .project-live-pill-btn {
+  background: rgba(14, 165, 233, 0.1);
+  border-color: rgba(14, 165, 233, 0.3);
+  color: #0284c7;
+}
+
+body.light-mode .project-live-pill-btn:hover {
+  background: #0284c7;
+  color: #ffffff;
+}
+
+body.light-mode .project-live-cta {
+  background: #0284c7;
+  color: #ffffff;
+}
+
+body.light-mode .project-live-cta:hover {
+  background: #0369a1;
+  border-color: #0369a1;
+}
+
+body.light-mode .project-source-cta {
+  background: #ffffff;
+  border-color: #dcdcd6;
+  color: #0a0a0a;
+}
+
+body.light-mode .project-source-cta:hover {
+  background: #f0eee9;
+  border-color: #0284c7;
+  color: #0284c7;
+}
+

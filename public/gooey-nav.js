@@ -209,6 +209,9 @@
           e.preventDefault();
           filterFeed(tabName);
           history.replaceState(null, '', `#${tabName}`);
+          if (window.innerWidth <= 768 && window.scrollY > 120) {
+            window.scrollTo({ top: 120, behavior: 'smooth' });
+          }
         }
       });
     });
@@ -699,13 +702,28 @@
       });
 
       // On Click / Tap: Trigger next pose, playful reaction phrase, and bubble burst!
-      peeker.addEventListener('click', (e) => {
+      let lastPeekerTap = 0;
+      function handlePeekerInteraction(clientX, clientY) {
+        const now = Date.now();
+        if (now - lastPeekerTap < 200) return;
+        lastPeekerTap = now;
         const nextIdx = (currentPoseIdx + 1) % poses.length;
         setPose(nextIdx, true);
-        if (typeof triggerGooeyClick === 'function') {
-          triggerGooeyClick(e.clientX, e.clientY);
+        if (typeof triggerGooeyClick === 'function' && clientX !== undefined && clientY !== undefined) {
+          triggerGooeyClick(clientX, clientY);
         }
+      }
+
+      peeker.addEventListener('click', (e) => {
+        handlePeekerInteraction(e.clientX, e.clientY);
       });
+
+      peeker.addEventListener('touchend', (e) => {
+        const touch = e.changedTouches && e.changedTouches[0];
+        if (touch) {
+          handlePeekerInteraction(touch.clientX, touch.clientY);
+        }
+      }, { passive: true });
     })();
 
     // 9. Connect / Message Drawer or Action
