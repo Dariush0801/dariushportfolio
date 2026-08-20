@@ -167,14 +167,16 @@ body.light-mode .mobile-top-header {
 }
 
 body.light-mode .mobile-visitor-pill {
-  background: #ffffff;
-  border-color: #ececea;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 body.light-mode .mobile-visitor-pill:hover,
 body.light-mode .mobile-visitor-pill:active {
-  background: #f0eee9;
+  background: transparent !important;
+  border: none !important;
+  opacity: 0.85;
 }
 
 body.light-mode .mobile-theme-toggle {

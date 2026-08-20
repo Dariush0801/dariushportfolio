@@ -2125,36 +2125,38 @@ body.rail-collapsed .sidebar-peeker:hover {
     letter-spacing: -0.015em;
   }
 
-  /* Live Visitors Capsule Button on Mobile */
+  /* Live Visitors Indicator on Mobile (No background/border, horizontal layout) */
   .mobile-visitor-pill {
     display: inline-flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 6px;
-    padding: 3px 9px 3px 5px;
+    padding: 0 4px;
     height: 32px;
     box-sizing: border-box;
-    border-radius: 20px;
-    background: var(--bg-surface);
-    border: 1px solid var(--border-line);
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
     cursor: pointer;
     color: var(--text-primary);
     margin: 0;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-    transition: all 0.2s ease;
+    transition: opacity 0.2s ease, transform 0.15s ease;
     user-select: none;
     -webkit-user-select: none;
   }
 
   .mobile-visitor-pill:hover,
   .mobile-visitor-pill:active {
-    background: var(--bg-surface-hover);
-    border-color: var(--primary);
+    background: transparent !important;
+    border: none !important;
+    opacity: 0.85;
   }
 
   .mobile-visitor-pill .nav-visitor-avatars {
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    flex-shrink: 0;
   }
 
   .mobile-visitor-pill .nav-visitor-avatars:empty {
@@ -2162,10 +2164,11 @@ body.rail-collapsed .sidebar-peeker:hover {
   }
 
   .mobile-visitor-pill .visitor-avatar-bubble {
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     margin: 0;
     border-width: 1.5px;
+    flex-shrink: 0;
   }
 
   .mobile-visitor-pill .visitor-avatar-plus {
@@ -2173,24 +2176,26 @@ body.rail-collapsed .sidebar-peeker:hover {
   }
 
   .mobile-visitor-pill .nav-visitor-text {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    font-size: 11.5px;
-    gap: 3px;
+    font-size: 13px;
+    gap: 4px;
     padding: 0;
     line-height: 1;
+    white-space: nowrap;
   }
 
   .mobile-visitor-pill .nav-visitor-count {
-    font-size: 12px;
+    font-size: 13.5px;
     font-weight: 700;
     color: var(--text-primary);
     line-height: 1;
+    margin-left: 2px;
   }
 
   .mobile-visitor-pill .nav-visitor-label {
-    font-size: 11px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
     color: var(--text-secondary);
     line-height: 1;
     white-space: nowrap;
