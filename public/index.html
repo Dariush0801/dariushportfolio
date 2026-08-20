@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dariush Dave Aguilar — Web Developer, Graphic Designer & UI/UX Designer Social Profile & Portfolio">
+  <title>Dariush Dave Aguilar (@dariushdave) — Portfolio</title>
+  
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="Dariush Photo.png">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Dariush Dave Aguilar (@dariushdave) — Portfolio">
+  <meta property="og:description" content="Information Technology student & developer crafting high-performance web applications, fluid user interfaces, and automated workflows.">
+  <meta property="og:image" content="Dariush Photo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="Dariush Photo.png">
+  
+  <!-- Preload & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="overrides.css">
+  <link rel="stylesheet" href="Ribbons.css">
+  <link rel="stylesheet" href="GooeyNav.css">
+  <link rel="stylesheet" href="BounceCards.css">
+  <link rel="stylesheet" href="ShinyText.css">
+  <link rel="stylesheet" href="RippleDistortion.css">
+</head>
+<body>
+  <!-- Ambient background canvas -->
+  <div class="ribbons-container" aria-hidden="true"></div>
+
+  <!-- 3-Column Social Profile Shell -->
+  <div class="threads-shell">
+    
+    <!-- ─────────────────────────────────────────────────────────────────────────────
+         1. Left Navigation Sidebar
+    ───────────────────────────────────────────────────────────────────────────── -->
+    <aside class="threads-sidebar" aria-label="Sidebar navigation">
+      <nav class="sidebar-nav" aria-label="Main Navigation">
+        
+        <!-- Active Visitors Viewing Widget (Top of Navigations) -->
+        <div class="nav-visitor-widget" id="navVisitorWidget" title="Live visitors viewing this portfolio · Click to customize your profile pic">
+          <div class="nav-visitor-avatars" id="navVisitorAvatars">
+            <!-- Dynamically rendered real-time active visitor profile pictures -->
+          </div>
+          <div class="nav-visitor-text">
+            <strong class="nav-visitor-count" id="navVisitorCount" style="display: none;">0</strong>
+            <span class="nav-visitor-label" id="navVisitorLabel">no visitors</span>
+          </div>
+        </div>
+
+        <button class="sidebar-link active" type="button" data-tab="all">
+          <span class="sidebar-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </span>
+          <span>Home</span>
+        </button>
+
+        <button class="sidebar-link" type="button" data-tab="projects">
+          <span class="sidebar-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </span>
+          <span>Projects</span>
+        </button>
+
+        <button class="sidebar-link" type="button" data-tab="certificates">
+          <span class="sidebar-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+          </span>
+          <span>Certificates</span>
+        </button>
+
+        <button class="sidebar-link" type="button" data-tab="skills">
+          <span class="sidebar-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </span>
+          <span>Skills &amp; Stack</span>
+        </button>
+
+        <button class="sidebar-link" type="button" data-tab="about">
+          <span class="sidebar-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </span>
+          <span>About &amp; Contact</span>
+        </button>
+      </nav>
+
+      <!-- Primary Action CTA -->
+      <a class="sidebar-cta-btn" href="https://drive.google.com/file/d/119bIfm_AoMG_v0QQeKO9n8Fsu1q8YFh0/view?usp=sharing" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>Resume</span>
+      </a>
+
+    </aside>
+
+    <!-- ─────────────────────────────────────────────────────────────────────────────
+         2. Center Main Stream (Profile Header + Feed)
+    ───────────────────────────────────────────────────────────────────────────── -->
+    <main class="threads-main-stream">
+      
+      <!-- Mobile Sleek Top App Bar (Visible on mobile viewports) -->
+      <header class="mobile-top-header" aria-label="Mobile top bar">
+        <div class="mobile-top-brand">
+          <span class="mobile-brand-symbol">D</span>
+          <span class="mobile-brand-name">dariushdave</span>
+          <span class="profile-verified-badge" title="Verified Creator" aria-label="Verified Creator" style="width: 15px; height: 15px; font-size: 8px;">
+            <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+        </div>
+
+        <!-- Mobile Live Visitors Pill Button (Opens Avatar Modal) -->
+        <button class="mobile-visitor-pill nav-visitor-widget" id="mobileVisitorPill" type="button" title="Live visitors viewing this portfolio · Tap to customize your profile pic" aria-label="Live visitors viewing this portfolio">
+          <div class="nav-visitor-avatars" id="mobileVisitorAvatars">
+            <!-- Dynamically rendered real-time active visitor profile pictures -->
+          </div>
+          <div class="nav-visitor-text">
+            <strong class="nav-visitor-count" id="mobileVisitorCount" style="display: none;">0</strong>
+            <span class="nav-visitor-label" id="mobileVisitorLabel">live</span>
+          </div>
+        </button>
+
+        <div class="mobile-top-actions">
+          <button class="mobile-theme-toggle theme-toggle-btn" type="button" aria-label="Toggle light/dark mode" title="Toggle theme">◐</button>
+        </div>
+      </header>
+
+      <!-- Profile Atmospheric Banner with React Bits Ripple Distortion -->
+      <header class="profile-banner">
+        <div class="ripple-distortion" id="bannerRippleDistortion" aria-hidden="true"></div>
+        <div class="profile-avatar-anchor" id="profileAvatarAnchor" title="Dariush Dave Aguilar — Click to switch photo">
+          <!-- Status Speech Bubble Floating at Top of Profile Pic -->
+          <div class="avatar-status-bubble" title="Status: Open for Internship">
+            <span class="bubble-text">Open for Internship</span>
+            <span class="bubble-tail" aria-hidden="true"></span>
+          </div>
+
+          <div class="profile-avatar-slideshow" id="profileAvatarSlideshow">
+            <img class="profile-avatar-img active" src="Images/Me/772602383_1552149023325154_5681305542260715113_n.jpg" alt="Dariush Dave Aguilar (Photo 1)" loading="eager">
+            <img class="profile-avatar-img" src="Images/Me/773120257_2336676013817308_5815400933772509449_n.jpg" alt="Dariush Dave Aguilar (Photo 2)" loading="lazy">
+            <img class="profile-avatar-img" src="Images/Me/773209090_1536727467584051_4013601242178766596_n.jpg" alt="Dariush Dave Aguilar (Photo 3)" loading="lazy">
+            <img class="profile-avatar-img" src="Images/Me/773302372_27837624222530594_1745788200626682219_n.jpg" alt="Dariush Dave Aguilar (Photo 4)" loading="lazy">
+            <img class="profile-avatar-img" src="Images/Me/774510573_4485417065050039_5704891340474032871_n.jpg" alt="Dariush Dave Aguilar (Photo 5)" loading="lazy">
+            <img class="profile-avatar-img" src="Images/Me/776061324_2039876406644819_3870858030499727162_n.jpg" alt="Dariush Dave Aguilar (Photo 6)" loading="lazy">
+            <img class="profile-avatar-img" src="Images/Me/776061328_4537313893256197_1861725576839956045_n.jpg" alt="Dariush Dave Aguilar (Photo 7)" loading="lazy">
+          </div>
+        </div>
+      </header>
+
+      <!-- Top Actions Bar -->
+      <div class="profile-action-bar">
+        <div class="profile-role-titles">
+          <span>Web designer</span>
+          <span class="role-pipe">|</span>
+          <span>Web developer</span>
+          <span class="role-pipe">|</span>
+          <span>Graphic designer</span>
+        </div>
+        <div class="profile-action-buttons">
+          <a class="profile-btn profile-btn-primary mobile-resume-btn" href="https://drive.google.com/file/d/119bIfm_AoMG_v0QQeKO9n8Fsu1q8YFh0/view?usp=sharing" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Resume</span>
+          </a>
+          <button class="profile-btn profile-btn-secondary btn-message" type="button">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>Message</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Profile Bio Box -->
+      <section class="profile-bio-box">
+        <div class="profile-name-row">
+          <h1 class="profile-display-name"><span class="shiny-text" data-text="Dariush Dave Aguilar" data-speed="2" data-color="#b5b5b5" data-shine-color="#ffffff" data-spread="120">Dariush Dave Aguilar</span></h1>
+          <span class="profile-verified-badge" title="Verified Creator" aria-label="Verified Creator">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+        </div>
+
+        <div class="profile-handle-row">
+          <span class="profile-handle">@dariushdave</span>
+          <span>·</span>
+          <span>he/him</span>
+        </div>
+
+        <div class="profile-roles-row">
+          <span class="profile-role-pill">Web Design</span>
+          <span class="profile-role-pill">Web Development</span>
+          <span class="profile-role-pill">Graphic Design</span>
+        </div>
+
+        <!-- Connect With me Social Icons -->
+        <div class="bio-connect-section">
+          <span class="bio-connect-title">Connect With me</span>
+          <div class="bio-social-links">
+            <!-- GitHub -->
+            <a href="https://github.com/Dariush0801" target="_blank" rel="noopener" class="bio-social-btn" title="GitHub (@Dariush0801)" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/dariushdaveaguilar/" target="_blank" rel="noopener" class="bio-social-btn" title="LinkedIn (dariushdaveaguilar)" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/dummm.plings/" target="_blank" rel="noopener" class="bio-social-btn" title="Instagram (@dummm.plings)" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/dariushdave01" target="_blank" rel="noopener" class="bio-social-btn" title="Facebook (dariushdave01)" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="profile-meta-row">
+          <span class="meta-item">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Quezon City, Philippines</span>
+          </span>
+          <a class="meta-item" href="mailto:dariushdave01@gmail.com" title="Send email to dariushdave01@gmail.com">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>dariushdave01@gmail.com</span>
+          </a>
+          <span class="meta-item">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Active Since 2026 · QCU</span>
+          </span>
+        </div>
+      </section>
+
+      <!-- Sticky Profile Tabs Bar -->
+      <nav class="profile-tabs-bar" aria-label="Feed Tabs">
+        <button class="profile-tab active" type="button" data-tab="all">
+          <span>Feeds</span>
+        </button>
+        <button class="profile-tab" type="button" data-tab="projects">
+          <span>Projects</span>
+        </button>
+        <button class="profile-tab" type="button" data-tab="certificates">
+          <span>Certificates</span>
+        </button>
+        <button class="profile-tab" type="button" data-tab="skills">
+          <span>Tech &amp; Skills</span>
+        </button>
+        <button class="profile-tab" type="button" data-tab="about">
+          <span>About &amp; Contact</span>
+        </button>
+      </nav>
+
+      <!-- ─────────────────────────────────────────────────────────────────────────────
+           Feed Stream Container
+      ───────────────────────────────────────────────────────────────────────────── -->
+      <div class="feed-container">
+
+        <!-- Empty Projects State -->
+        <article class="feed-card empty-feed-card" data-category="projects" style="display: none; padding: 48px 20px; text-align: center;">
+          <div style="grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; margin: auto; max-width: 420px;">
+            <div style="width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--border-line); background: var(--bg-surface); display: grid; place-items: center; color: var(--text-muted);">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <h3 style="font-family: var(--font-serif); font-size: 20px; color: var(--text-primary); margin: 0;">Projects in Progress</h3>
+            <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.5; margin: 0;">Case studies and interactive web applications are currently being curated and will be published here soon.</p>
+          </div>
+        </article>
+
+        <!-- Feed Card 1: Introduction Highlight (First in All Highlights) -->
+        <article class="feed-card" data-category="about intro" style="grid-template-columns: 1fr;">
+          <div class="feed-card-body" style="width: 100%;">
+            <header class="cert-feed-header" style="margin-bottom: 12px;">
+              <div>
+                <p style="font-size: 13.5px; color: var(--text-secondary); margin: 0;">4th-Year Information Technology Student · Quezon City University</p>
+              </div>
+            </header>
+
+            <p class="post-text-sans" style="line-height: 1.7; color: var(--text-primary); font-size: 14.5px; margin: 0 0 14px;">
+              I am a 4th-year IT student at Quezon City University with a strong interest in web development, graphic design, and web design. I have experience creating responsive and user-friendly websites, designing engaging visual content, and developing digital solutions that combine creativity and technology. My technical skills, creative mindset, and attention to detail allow me to build functional, visually appealing, and impactful digital experiences.
+            </p>
+
+            <footer class="post-interactions-bar">
+              <button class="interaction-item btn-like" type="button" aria-label="Like post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                <span class="like-count" data-count="426">426</span>
+              </button>
+              <button class="interaction-item btn-share" type="button" aria-label="Share post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                <span>Share</span>
+              </button>
+              <button class="interaction-item btn-save" type="button" aria-label="Save post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                <span>Save</span>
+              </button>
+            </footer>
+          </div>
+        </article>
+
+        <!-- Feed Card: Certifications & Technical Credentials -->
+        <article class="feed-card" data-category="certificates" style="grid-template-columns: 1fr;">
+          <div class="cert-feed-wrapper">
+            <header class="cert-feed-header">
+              <div>
+                <h2 class="cert-feed-title">Certifications &amp; Credentials</h2>
+                <p style="font-size: 13.5px; color: var(--text-secondary); margin-top: 4px;">Continuous learning milestones across Visual Design, Cloud Security, SQL, and Software Development.</p>
+              </div>
+            </header>
+
+            <!-- React Bits BounceCards Showcase (Non-looping GSAP Bounce Animation & Hover Push) -->
+            <div class="cert-bounce-stage">
+              <div class="bounceCardsContainer cert-bounce-container" id="certBounceCards">
+                <div class="card card-0 cert-thumbnail-card" data-img="Certification/Cert%201.png" data-title="CyberSecure U: Defending the Digital World — AWS Learning Club (Oct 2025)">
+                  <img class="image" src="Certification/Cert%201.png" alt="CyberSecure U — AWS Learning Club" onerror="this.onerror=null; this.src='assets/certificates/Cert%201.png';">
+                  <div class="card-overlay">
+                    <span class="cert-issuer">AWS Learning Club</span>
+                    <span class="cert-name">CyberSecure U (2025)</span>
+                    <span class="cert-hint">Click to inspect</span>
+                  </div>
+                </div>
+
+                <div class="card card-1 cert-thumbnail-card" data-img="Certification/Cert%202.png" data-title="AI Tools for UX/UI &amp; Web Designers — Udemy (Apr 2025)">
+                  <img class="image" src="Certification/Cert%202.png" alt="AI Tools for UX/UI — Udemy" onerror="this.onerror=null; this.src='assets/certificates/Cert%202.png';">
+                  <div class="card-overlay">
+                    <span class="cert-issuer">Udemy</span>
+                    <span class="cert-name">AI Tools for UX/UI</span>
+                    <span class="cert-hint">Click to inspect</span>
+                  </div>
+                </div>
+
+                <div class="card card-2 cert-thumbnail-card" data-img="Certification/Cert%203.png" data-title="JavaScript Mastery From Basics to Advanced 2025 — Udemy (Apr 2025)">
+                  <img class="image" src="Certification/Cert%203.png" alt="JavaScript Mastery — Udemy" onerror="this.onerror=null; this.src='assets/certificates/Cert%203.png';">
+                  <div class="card-overlay">
+                    <span class="cert-issuer">Udemy</span>
+                    <span class="cert-name">JavaScript Mastery 2025</span>
+                    <span class="cert-hint">Click to inspect</span>
+                  </div>
+                </div>
+
+                <div class="card card-3 cert-thumbnail-card" data-img="Certification/Cert%204.png" data-title="GIT, GitLab, GitHub Fundamentals for Software Developers — Udemy (Apr 2025)">
+                  <img class="image" src="Certification/Cert%204.png" alt="GIT &amp; GitHub Fundamentals — Udemy" onerror="this.onerror=null; this.src='assets/certificates/Cert%204.png';">
+                  <div class="card-overlay">
+                    <span class="cert-issuer">Udemy</span>
+                    <span class="cert-name">Git &amp; GitHub</span>
+                    <span class="cert-hint">Click to inspect</span>
+                  </div>
+                </div>
+
+                <div class="card card-4 cert-thumbnail-card" data-img="Certification/Cert%205.png" data-title="Professional Certificate in Project Management — Udemy (Apr 2025)">
+                  <img class="image" src="Certification/Cert%205.png" alt="Project Management — Udemy" onerror="this.onerror=null; this.src='assets/certificates/Cert%205.png';">
+                  <div class="card-overlay">
+                    <span class="cert-issuer">Udemy</span>
+                    <span class="cert-name">Project Management</span>
+                    <span class="cert-hint">Click to inspect</span>
+                  </div>
+                </div>
+
+                <div class="card card-5 cert-thumbnail-card" data-img="Certification/Cert%206.png" data-title="SQL Intermediate — Sololearn (Apr 2025)">
+                  <img class="image" src="Certification/Cert%206.png" alt="SQL Intermediate — Sololearn" onerror="this.onerror=null; this.src='assets/certificates/Cert%206.png';">
+                  <div class="card-overlay">
+                    <span class="cert-issuer">Sololearn</span>
+                    <span class="cert-name">SQL Intermediate</span>
+                    <span class="cert-hint">Click to inspect</span>
+                  </div>
+                </div>
+
+                <div class="card card-6 cert-thumbnail-card" data-img="Certification/Cert%207.png" data-title="Introduction to SQL — Sololearn (Mar 2025)">
+                  <img class="image" src="Certification/Cert%207.png" alt="Introduction to SQL — Sololearn" onerror="this.onerror=null; this.src='assets/certificates/Cert%207.png';">
+                  <div class="card-overlay">
+                    <span class="cert-issuer">Sololearn</span>
+                    <span class="cert-name">Introduction to SQL</span>
+                    <span class="cert-hint">Click to inspect</span>
+                  </div>
+                </div>
+
+                <div class="card card-7 cert-thumbnail-card" data-img="Certification/Cert%208.png" data-title="TESDA NC III — Visual Graphic Design (2023–2028)">
+                  <img class="image" src="Certification/Cert%208.png" alt="TESDA NC III — Visual Graphic Design" onerror="this.onerror=null; this.src='assets/certificates/Cert%208.png';">
+                  <div class="card-overlay">
+                    <span class="cert-issuer">TESDA NC III</span>
+                    <span class="cert-name">Visual Graphic Design</span>
+                    <span class="cert-hint">Click to inspect</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-stage-footer" style="justify-content: flex-end;">
+              <span style="font-size: 11.5px; color: var(--text-muted); font-weight: 500;">Credentials Stacked</span>
+            </div>
+
+            <footer class="post-interactions-bar" style="margin-top: 18px;">
+              <button class="interaction-item btn-like" type="button" aria-label="Like post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                <span class="like-count" data-count="352">352</span>
+              </button>
+              <button class="interaction-item btn-share" type="button" aria-label="Share post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                <span>Share</span>
+              </button>
+              <button class="interaction-item btn-save" type="button" aria-label="Save post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                <span>Save</span>
+              </button>
+            </footer>
+          </div>
+        </article>
+
+        <!-- Feed Card 2: Technical Skills & Core Stack -->
+        <article class="feed-card" data-category="skills" style="grid-template-columns: 1fr;">
+          <div class="feed-card-body" style="width: 100%;">
+            <header class="cert-feed-header" style="margin-bottom: 12px;">
+              <div>
+                <h2 class="cert-feed-title">Technical Skills &amp; Core Toolkit</h2>
+                <p style="font-size: 13.5px; color: var(--text-secondary); margin-top: 4px;">Development technologies, design &amp; productivity tools, and core competencies.</p>
+              </div>
+            </header>
+
+            <div class="post-media-card">
+              <div class="post-media-content">
+                <h3 class="post-media-title">Engineering &amp; Capabilities Matrix</h3>
+                <div class="rail-skills-list" style="margin-top: 10px;">
+                  <div class="skill-category-block">
+                    <span class="skill-cat-title">DEVELOPMENT</span>
+                    <div class="skill-tag-wrap">
+                      <span class="skill-pill">HTML</span>
+                      <span class="skill-pill">CSS</span>
+                      <span class="skill-pill">JavaScript</span>
+                      <span class="skill-pill">React</span>
+                      <span class="skill-pill">Node.js</span>
+                      <span class="skill-pill">PHP</span>
+                      <span class="skill-pill">Java</span>
+                      <span class="skill-pill">SQL</span>
+                      <span class="skill-pill">XAMPP</span>
+                    </div>
+                  </div>
+                  <div class="skill-category-block" style="margin-top: 10px;">
+                    <span class="skill-cat-title">DESIGN &amp; TOOLS</span>
+                    <div class="skill-tag-wrap">
+                      <span class="skill-pill">UI/UX Design</span>
+                      <span class="skill-pill">Figma</span>
+                      <span class="skill-pill">Prototyping</span>
+                      <span class="skill-pill">Adobe Photoshop</span>
+                      <span class="skill-pill">Canva</span>
+                      <span class="skill-pill">Google Workspace</span>
+                      <span class="skill-pill">Microsoft Office Suite (Word, Excel)</span>
+                      <span class="skill-pill">Basic Troubleshooting</span>
+                    </div>
+                  </div>
+                  <div class="skill-category-block" style="margin-top: 10px;">
+                    <span class="skill-cat-title">CORE COMPETENCIES</span>
+                    <div class="skill-tag-wrap">
+                      <span class="skill-pill">Problem-Solving</span>
+                      <span class="skill-pill">Adaptability</span>
+                      <span class="skill-pill">Attention to Detail</span>
+                      <span class="skill-pill">Creativity</span>
+                      <span class="skill-pill">Teamwork</span>
+                      <span class="skill-pill">Continuous Learning</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <footer class="post-interactions-bar">
+              <button class="interaction-item btn-like" type="button" aria-label="Like post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                <span class="like-count" data-count="490">490</span>
+              </button>
+              <button class="interaction-item btn-message" type="button" aria-label="Comments">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                <span>31</span>
+              </button>
+              <button class="interaction-item btn-share" type="button" aria-label="Share post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                <span>Share</span>
+              </button>
+              <button class="interaction-item btn-save" type="button" aria-label="Save post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                <span>Save</span>
+              </button>
+            </footer>
+          </div>
+        </article>
+
+        <!-- Feed Card 3: About & Contact Letter -->
+        <article class="feed-card" data-category="about" style="grid-template-columns: 1fr;">
+          <div class="feed-card-body" style="width: 100%;">
+            <header class="cert-feed-header" style="margin-bottom: 12px;">
+              <div>
+                <h2 class="cert-feed-title">About &amp; Direct Contact</h2>
+                <p style="font-size: 13.5px; color: var(--text-secondary); margin-top: 4px;">Information Technology student &amp; developer open for internship opportunities.</p>
+              </div>
+            </header>
+
+            <div class="post-text" style="font-size: 16px; font-weight: 600; color: var(--text-primary); margin-bottom: 10px; line-height: 1.5;">
+              &ldquo;Great software shouldn't just run fast—it should feel deliberate, intuitive, and visually memorable.&rdquo;
+            </div>
+
+            <p class="post-text-sans" style="line-height: 1.6; color: var(--text-secondary); margin-bottom: 14px; font-size: 14px;">
+              Currently pursuing a Bachelor of Science in Information Technology at <b>Quezon City University</b> and actively <b>Open for Internship</b> opportunities in Web Development and UI/UX Design. Let's connect and build something impactful!
+            </p>
+
+            <div class="post-media-card" style="padding: 16px; background: var(--bg-surface); border: 1px solid var(--border-line);">
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span style="display: inline-flex; color: var(--primary);">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </span>
+                  <a href="mailto:dariushdave01@gmail.com" style="font-weight: 700; color: var(--primary); text-decoration: underline; word-break: break-all;">dariushdave01@gmail.com</a>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span style="display: inline-flex; color: var(--text-secondary);">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  </span>
+                  <a href="tel:09323352618" style="font-weight: 600; color: var(--text-primary); text-decoration: none;">0932-335-2618</a>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span style="display: inline-flex; color: var(--text-secondary);">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </span>
+                  <span style="color: var(--text-secondary); font-weight: 500;">Quezon City, Philippines</span>
+                </div>
+              </div>
+            </div>
+
+            <footer class="post-interactions-bar" style="margin-top: 16px;">
+              <button class="interaction-item btn-like" type="button" aria-label="Like post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                <span class="like-count" data-count="614">614</span>
+              </button>
+              <button class="interaction-item btn-message" type="button" aria-label="Comments">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                <span>52</span>
+              </button>
+              <button class="interaction-item btn-share" type="button" aria-label="Share post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                <span>Share</span>
+              </button>
+              <button class="interaction-item btn-save" type="button" aria-label="Save post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                <span>Save</span>
+              </button>
+            </footer>
+          </div>
+        </article>
+
+      </div>
+    </main>
+
+    <!-- ─────────────────────────────────────────────────────────────────────────────
+         Animated Peeking Avatar (Peeking Edge, Waving, Winking, and Peace Sign)
+    ───────────────────────────────────────────────────────────────────────────── -->
+    <div class="sidebar-peeker" id="sidebarPeeker" role="button" tabindex="0" aria-label="Interactive Avatar · Click to interact!" title="Hey! Click me for animations!">
+      <div class="peeker-speech-bubble" id="peekerSpeechBubble">
+        <span class="peeker-bubble-text" id="peekerBubbleText">Hi there! 👋</span>
+        <span class="peeker-bubble-tail"></span>
+      </div>
+      <div class="peeker-avatar-frame">
+        <img class="peeker-pose pose-peek active" id="peekerPosePeek" src="assets/avatar-peek-trans.png" alt="Dariush Peeking Pose" loading="lazy">
+        <img class="peeker-pose pose-peace" id="peekerPosePeace" src="assets/avatar-peace-trans.png" alt="Dariush Peace Pose" loading="lazy">
+        <img class="peeker-pose pose-wink" id="peekerPoseWink" src="assets/avatar-wink-trans.png" alt="Dariush Wink Pose" loading="lazy">
+      </div>
+    </div>
+
+    <!-- ─────────────────────────────────────────────────────────────────────────────
+         3. Right Rail (Pinned Highlight, Tech Matrix, Connect Suggestions)
+    ───────────────────────────────────────────────────────────────────────────── -->
+    <aside class="threads-right-rail" aria-label="Discovery & widgets">
+      
+      <!-- Arrow Button to Hide/Collapse Right Sidebar -->
+      <button class="rail-toggle-btn" type="button" aria-label="Hide sidebar" title="Hide sidebar">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+
+      <!-- Pinned Spotlight Card -->
+      <div>
+        <div class="rail-section-header">Pinned · Latest Credential</div>
+        <div class="rail-pinned-card cert-thumbnail-card" data-img="Certification/Cert%201.png" data-title="CyberSecure U: Defending the Digital World — AWS Learning Club (Oct 2025)">
+          <div class="pinned-tag-row">
+            <span class="pinned-badge">AWS Learning Club · Oct 2025</span>
+            <span style="display: inline-flex; color: var(--primary);">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </span>
+          </div>
+          <h2 class="pinned-title">CyberSecure U: Defending the Digital World</h2>
+          <p class="pinned-meta">AWS Learning Club &amp; QCU credential in cybersecurity, cloud infrastructure, and digital defense.</p>
+        </div>
+      </div>
+
+      <!-- Skills Widget -->
+      <div>
+        <div class="rail-section-header">Core Toolkit</div>
+        <div class="rail-skills-list">
+          <div class="skill-category-block">
+            <span class="skill-cat-title">DEVELOPMENT</span>
+            <div class="skill-tag-wrap">
+              <span class="skill-pill">HTML</span>
+              <span class="skill-pill">CSS</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">React</span>
+              <span class="skill-pill">Node.js</span>
+              <span class="skill-pill">PHP</span>
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">XAMPP</span>
+            </div>
+          </div>
+          <div class="skill-category-block">
+            <span class="skill-cat-title">DESIGN &amp; TOOLS</span>
+            <div class="skill-tag-wrap">
+              <span class="skill-pill">UI/UX Design</span>
+              <span class="skill-pill">Figma</span>
+              <span class="skill-pill">Prototyping</span>
+              <span class="skill-pill">Adobe Photoshop</span>
+              <span class="skill-pill">Canva</span>
+              <span class="skill-pill">Google Workspace</span>
+              <span class="skill-pill">Microsoft Office Suite (Word, Excel)</span>
+              <span class="skill-pill">Basic Troubleshooting</span>
+            </div>
+          </div>
+          <div class="skill-category-block">
+            <span class="skill-cat-title">CORE COMPETENCIES</span>
+            <div class="skill-tag-wrap">
+              <span class="skill-pill">Problem-Solving</span>
+              <span class="skill-pill">Adaptability</span>
+              <span class="skill-pill">Attention to Detail</span>
+              <span class="skill-pill">Creativity</span>
+              <span class="skill-pill">Teamwork</span>
+              <span class="skill-pill">Continuous Learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rail Footer & Theme Switcher -->
+      <footer class="rail-footer">
+        <span>© 2026 Dariush Aguilar</span>
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle light/dark mode" title="Toggle theme">&#9680;</button>
+      </footer>
+    </aside>
+
+  <!-- Square Reopen Button on right edge (when Right Sidebar is Hidden) -->
+  <button class="rail-reopen-btn" type="button" aria-label="Show right sidebar" title="Show sidebar">
+    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+
+  <!-- ─────────────────────────────────────────────────────────────────────────────
+       Mobile Bottom Navigation Bar
+  ───────────────────────────────────────────────────────────────────────────── -->
+  <nav class="mobile-nav-bar" aria-label="Mobile Navigation">
+    <button class="mobile-nav-item active" type="button" data-tab="all">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>Home</span>
+    </button>
+    <button class="mobile-nav-item" type="button" data-tab="projects">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+      <span>Projects</span>
+    </button>
+    <button class="mobile-nav-item" type="button" data-tab="certificates">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+      <span>Certs</span>
+    </button>
+    <button class="mobile-nav-item" type="button" data-tab="skills">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      <span>Stack</span>
+    </button>
+    <button class="mobile-nav-item" type="button" data-tab="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      <span>About</span>
+    </button>
+  </nav>
+
+  <!-- ─────────────────────────────────────────────────────────────────────────────
+       Modal Lightbox for Certificate Inspection
+  ───────────────────────────────────────────────────────────────────────────── -->
+  <dialog class="certificate-modal">
+    <div class="modal-header">
+      <span class="modal-cert-title" style="font-weight: 700; font-size: 14px;">Certificate Milestone</span>
+      <button class="modal-close-btn" type="button" aria-label="Close modal">×</button>
+    </div>
+    <div class="modal-img-container">
+      <img class="modal-cert-img" src="Certification/Cert 1.png" alt="Expanded certificate">
+    </div>
+  </dialog>
+
+  <!-- ─────────────────────────────────────────────────────────────────────────────
+       Modal Dialog for Visitor Avatar Customization / Profile Picture
+  ───────────────────────────────────────────────────────────────────────────── -->
+  <dialog class="visitor-avatar-modal" id="visitorAvatarModal">
+    <div class="modal-header">
+      <span style="font-weight: 700; font-size: 14px; color: var(--text-primary);">Your Visitor Profile Picture</span>
+      <button class="modal-close-btn" id="closeVisitorModal" type="button" aria-label="Close modal">×</button>
+    </div>
+    <div class="visitor-modal-body">
+      <div class="visitor-modal-preview">
+        <div class="visitor-preview-circle">
+          <img class="visitor-preview-img" id="visitorModalPreviewImg" src="" alt="Your visitor avatar">
+        </div>
+        <span class="visitor-preview-tag">Visible to other visitors live</span>
+      </div>
+      <div class="visitor-modal-actions">
+        <label class="visitor-upload-btn">
+          <input type="file" id="visitorFileInput" accept="image/*" style="display: none;">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          <span>Upload Custom Photo</span>
+        </label>
+        <div class="visitor-input-row">
+          <input type="text" id="visitorGithubInput" placeholder="GitHub username (e.g. dariushdave)" class="visitor-text-input">
+          <button type="button" id="visitorGithubBtn" class="visitor-action-btn">Use Profile</button>
+        </div>
+        <button type="button" id="visitorRandomBtn" class="visitor-action-btn-subtle">🎲 Pick Random Style</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Toast Notification element -->
+  <div class="toast-msg" role="status" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="vendor/gsap.min.js"></script>
+  <script src="bounce-cards.js"></script>
+  <script src="ribbons.js"></script>
+  <script src="gooey-nav.js"></script>
+  <script src="shiny-text.js"></script>
+  <script type="module" src="RippleDistortion.js"></script>
+</body>
+</html>
