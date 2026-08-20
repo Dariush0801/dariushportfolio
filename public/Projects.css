@@ -165,15 +165,15 @@
 
 .project-expanded-grid {
   display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 28px;
+  grid-template-columns: 195px 1fr;
+  gap: 24px;
   align-items: start;
 }
 
 @media (max-width: 768px) {
   .project-expanded-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 18px;
   }
 }
 
@@ -187,11 +187,11 @@
 
 .project-device-frame {
   width: 100%;
-  max-width: 240px;
-  border-radius: 14px;
+  max-width: 195px;
+  border-radius: 12px;
   background: #090a0d;
   border: 1px solid var(--border-strong, rgba(255, 255, 255, 0.14));
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.45);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -202,7 +202,7 @@
   position: relative;
   width: 100%;
   aspect-ratio: 9 / 18.2;
-  max-height: 420px;
+  max-height: 350px;
   overflow: hidden;
   background: #000000;
   cursor: pointer;
@@ -260,8 +260,8 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   background: rgba(15, 17, 21, 0.75);
   backdrop-filter: blur(8px);
@@ -288,20 +288,20 @@
 }
 
 .carousel-nav-btn.prev-btn {
-  left: 8px;
+  left: 6px;
 }
 
 .carousel-nav-btn.next-btn {
-  right: 8px;
+  right: 6px;
 }
 
 /* Dots Indicator Bar */
 .carousel-indicator-bar {
-  padding: 8px 12px;
+  padding: 6px 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 4px;
   background: #0c0e12;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   width: 100%;
@@ -315,8 +315,8 @@
 }
 
 .indicator-dot {
-  width: 6px;
-  height: 6px;
+  width: 4.5px;
+  height: 4.5px;
   border-radius: 50%;
   background: #4b5563;
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -331,10 +331,10 @@
 }
 
 .indicator-dot.active {
-  width: 16px;
-  border-radius: 4px;
+  width: 13px;
+  border-radius: 3px;
   background: var(--primary, #0ea5e9);
-  box-shadow: 0 0 10px rgba(14, 165, 233, 0.65);
+  box-shadow: 0 0 8px rgba(14, 165, 233, 0.65);
 }
 
 /* Right Column: Descriptions, Features, Meta */
