@@ -358,8 +358,8 @@
 .indicator-dot.active {
   width: 16px;
   border-radius: 4px;
-  background: #a3e635;
-  box-shadow: 0 0 8px rgba(163, 230, 53, 0.55);
+  background: var(--primary, #0ea5e9);
+  box-shadow: 0 0 10px rgba(14, 165, 233, 0.65);
 }
 
 /* Right Column: Descriptions, Features, Meta */
@@ -387,7 +387,7 @@
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.08em;
-  color: #a3e635;
+  color: var(--primary, #0ea5e9);
   font-family: var(--font-mono, monospace);
   text-transform: uppercase;
   margin: 0;
@@ -412,7 +412,7 @@
 }
 
 .feature-arrow {
-  color: #a3e635;
+  color: var(--primary, #0ea5e9);
   font-weight: 700;
   font-size: 15px;
   flex-shrink: 0;
@@ -638,8 +638,8 @@ body.light-mode .carousel-indicator-bar {
 }
 
 body.light-mode .indicator-dot.active {
-  background: #65a30d;
-  box-shadow: 0 0 6px rgba(101, 163, 13, 0.5);
+  background: var(--primary, #0ea5e9);
+  box-shadow: 0 0 8px rgba(14, 165, 233, 0.45);
 }
 
 body.light-mode .project-long-desc {
@@ -647,11 +647,11 @@ body.light-mode .project-long-desc {
 }
 
 body.light-mode .project-features-heading {
-  color: #4d7c0f;
+  color: var(--primary, #0ea5e9);
 }
 
 body.light-mode .feature-arrow {
-  color: #4d7c0f;
+  color: var(--primary, #0ea5e9);
 }
 
 body.light-mode .project-features-list li {
