@@ -2129,8 +2129,11 @@ body.rail-collapsed .sidebar-peeker:hover {
   .mobile-visitor-pill {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 6px;
-    padding: 4px 10px 4px 6px;
+    padding: 3px 9px 3px 5px;
+    height: 32px;
+    box-sizing: border-box;
     border-radius: 20px;
     background: var(--bg-surface);
     border: 1px solid var(--border-line);
@@ -2139,6 +2142,8 @@ body.rail-collapsed .sidebar-peeker:hover {
     margin: 0;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease;
+    user-select: none;
+    -webkit-user-select: none;
   }
 
   .mobile-visitor-pill:hover,
@@ -2152,31 +2157,43 @@ body.rail-collapsed .sidebar-peeker:hover {
     align-items: center;
   }
 
+  .mobile-visitor-pill .nav-visitor-avatars:empty {
+    display: none;
+  }
+
   .mobile-visitor-pill .visitor-avatar-bubble {
     width: 22px;
     height: 22px;
-    margin-right: -6px;
+    margin: 0;
     border-width: 1.5px;
   }
 
   .mobile-visitor-pill .visitor-avatar-plus {
-    height: 18px;
-    padding: 0 5px;
-    font-size: 9.5px;
+    display: none !important;
   }
 
   .mobile-visitor-pill .nav-visitor-text {
-    font-size: 11px;
+    display: flex;
+    align-items: center;
+    font-size: 11.5px;
     gap: 3px;
     padding: 0;
+    line-height: 1;
   }
 
   .mobile-visitor-pill .nav-visitor-count {
-    font-size: 11.5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1;
   }
 
   .mobile-visitor-pill .nav-visitor-label {
-    font-size: 10.5px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    line-height: 1;
+    white-space: nowrap;
   }
 
   .mobile-top-actions {

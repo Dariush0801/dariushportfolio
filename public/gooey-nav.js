@@ -441,7 +441,15 @@
             c.style.display = 'none';
             c.textContent = '0';
           });
-          labelEls.forEach(l => l.textContent = 'live');
+          labelEls.forEach(l => {
+            if (l.id === 'mobileVisitorLabel') {
+              l.textContent = 'No visitors';
+              l.style.display = 'inline';
+            } else {
+              l.textContent = 'no visitors';
+              l.style.display = 'inline';
+            }
+          });
           return;
         }
 
@@ -452,9 +460,11 @@
         });
         labelEls.forEach(l => {
           if (l.id === 'mobileVisitorLabel') {
-            l.textContent = total === 1 ? 'online' : 'online';
+            l.textContent = '';
+            l.style.display = 'none';
           } else {
             l.textContent = total === 1 ? 'person viewing now' : 'people viewing now';
+            l.style.display = 'inline';
           }
         });
 
@@ -465,27 +475,45 @@
           return 0;
         });
 
-        const visible = sorted.slice(0, 3);
-        const plusCount = Math.max(0, total - visible.length);
-
-        let html = '';
-        visible.forEach((v, index) => {
-          const zIndex = 5 - index;
-          const isYou = v.id === visitorId;
-          const isYouClass = isYou ? 'is-you' : '';
-          const title = isYou ? 'Your visitor profile (Click to customize)' : (v.name || 'Active visitor');
-          html += `
-            <div class="visitor-avatar-bubble ${isYouClass} avatar-pop-in" style="z-index: ${zIndex};" title="${title}">
-              <img src="${v.avatarUrl}" alt="${v.name || 'Visitor'}" onerror="this.onerror=null; this.src='https://api.dicebear.com/7.x/notionists/svg?seed=fallback';">
-            </div>
-          `;
+        // Generate avatars for desktop & mobile
+        avatarContainers.forEach(c => {
+          if (c.id === 'mobileVisitorAvatars') {
+            // Mobile: 1 single avatar icon only
+            const topUser = sorted[0];
+            if (topUser) {
+              const isYou = topUser.id === visitorId;
+              const isYouClass = isYou ? 'is-you' : '';
+              const title = isYou ? 'Your visitor profile (Tap to customize)' : (topUser.name || 'Active visitor');
+              c.innerHTML = `
+                <div class="visitor-avatar-bubble ${isYouClass} avatar-pop-in" style="z-index: 1;" title="${title}">
+                  <img src="${topUser.avatarUrl}" alt="${topUser.name || 'Visitor'}" onerror="this.onerror=null; this.src='https://api.dicebear.com/7.x/notionists/svg?seed=fallback';">
+                </div>
+              `;
+            } else {
+              c.innerHTML = '';
+            }
+          } else {
+            // Desktop: multi-avatar stack
+            const visible = sorted.slice(0, 3);
+            const plusCount = Math.max(0, total - visible.length);
+            let html = '';
+            visible.forEach((v, index) => {
+              const zIndex = 5 - index;
+              const isYou = v.id === visitorId;
+              const isYouClass = isYou ? 'is-you' : '';
+              const title = isYou ? 'Your visitor profile (Click to customize)' : (v.name || 'Active visitor');
+              html += `
+                <div class="visitor-avatar-bubble ${isYouClass} avatar-pop-in" style="z-index: ${zIndex};" title="${title}">
+                  <img src="${v.avatarUrl}" alt="${v.name || 'Visitor'}" onerror="this.onerror=null; this.src='https://api.dicebear.com/7.x/notionists/svg?seed=fallback';">
+                </div>
+              `;
+            });
+            if (plusCount > 0) {
+              html += `<div class="visitor-avatar-plus">+${plusCount}</div>`;
+            }
+            c.innerHTML = html;
+          }
         });
-
-        if (plusCount > 0) {
-          html += `<div class="visitor-avatar-plus">+${plusCount}</div>`;
-        }
-
-        avatarContainers.forEach(c => c.innerHTML = html);
       }
 
       function handleIncomingVisitor(v) {
