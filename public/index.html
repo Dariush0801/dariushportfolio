@@ -24,6 +24,7 @@
   
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="overrides.css">
+  <link rel="stylesheet" href="Projects.css">
   <link rel="stylesheet" href="Ribbons.css">
   <link rel="stylesheet" href="GooeyNav.css">
   <link rel="stylesheet" href="BounceCards.css">
@@ -254,16 +255,165 @@
       <!-- ─────────────────────────────────────────────────────────────────────────────
            Feed Stream Container
       ───────────────────────────────────────────────────────────────────────────── -->
-      <div class="feed-container">
+        <!-- Feed Card: Skin Disease Detection System Project Showcase -->
+        <article class="feed-card project-feed-card" data-category="projects" id="projectSkinwise">
+          <div class="project-card-container">
+            <!-- Collapsed Header & Summary Row -->
+            <div class="project-card-summary">
+              <div class="project-header-row">
+                <h2 class="project-title">Skin Disease Detection System</h2>
+                <span class="project-badge">Mobile</span>
+              </div>
 
-        <!-- Empty Projects State -->
-        <article class="feed-card empty-feed-card" data-category="projects" style="display: none; padding: 48px 20px; text-align: center;">
-          <div style="grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; margin: auto; max-width: 420px;">
-            <div style="width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--border-line); background: var(--bg-surface); display: grid; place-items: center; color: var(--text-muted);">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              <div class="project-divider"></div>
+
+              <p class="project-short-desc">
+                An AI-powered mobile app for detecting and classifying skin diseases using deep learning.
+              </p>
+
+              <div class="project-bottom-row">
+                <div class="project-tags">
+                  <span class="project-tag">Android Studio</span>
+                  <span class="project-tag">Flutter</span>
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag tag-more" title="Deep Learning · TensorFlow · Node.js">+1</span>
+                </div>
+                <button class="project-dropdown-btn" id="projectToggleBtn" type="button" aria-expanded="false" aria-label="Toggle project details" title="View Project Details">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+              </div>
             </div>
-            <h3 style="font-family: var(--font-serif); font-size: 20px; color: var(--text-primary); margin: 0;">Projects in Progress</h3>
-            <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.5; margin: 0;">Case studies and interactive web applications are currently being curated and will be published here soon.</p>
+
+            <!-- Collapsible Details Section -->
+            <div class="project-dropdown-content" id="projectDetailsContent">
+              <div class="project-expanded-grid">
+                
+                <!-- Left Column: Interactive Media Carousel Showcase -->
+                <div class="project-media-col">
+                  <div class="project-device-frame">
+                    <div class="project-carousel" id="projectCarousel" title="Click image to open in full screen">
+                      <!-- Carousel Track with Intro Video & App Screenshots -->
+                      <div class="carousel-track" id="carouselTrack">
+                        <!-- Slide 0: Intro Video (Plays first, at least 5s) -->
+                        <div class="carousel-slide" data-index="0" data-type="video">
+                          <div class="slide-video-wrap">
+                            <video id="skinwiseIntroVideo" playsinline muted autoplay loop preload="auto">
+                              <source src="Images/AI skinwise/AI skinwise vid intro.mp4" type="video/mp4">
+                              Your browser does not support HTML5 video.
+                            </video>
+                          </div>
+                        </div>
+                        <!-- Slide 1: Scanner View -->
+                        <div class="carousel-slide" data-index="1" data-type="image">
+                          <img src="Images/AI skinwise/Scanner Interface.png" alt="Scanner Interface" loading="lazy">
+                        </div>
+                        <!-- Slide 2: Taking Image -->
+                        <div class="carousel-slide" data-index="2" data-type="image">
+                          <img src="Images/AI skinwise/Scanner Taking Image.png" alt="Scanner Taking Image" loading="lazy">
+                        </div>
+                        <!-- Slide 3: Analysis Results -->
+                        <div class="carousel-slide" data-index="3" data-type="image">
+                          <img src="Images/AI skinwise/Clinics - Scan Detected - Analysis.png" alt="AI Scan Disease Analysis Results" loading="lazy">
+                        </div>
+                        <!-- Slide 4: Detected Clinics -->
+                        <div class="carousel-slide" data-index="4" data-type="image">
+                          <img src="Images/AI skinwise/Clinics - Scan Detected.png" alt="Clinic Recommendations based on Scan" loading="lazy">
+                        </div>
+                        <!-- Slide 5: Scheduling Appointment -->
+                        <div class="carousel-slide" data-index="5" data-type="image">
+                          <img src="Images/AI skinwise/Clinics - Select - Scheduling - Done.png" alt="Clinic Appointment Scheduling" loading="lazy">
+                        </div>
+                        <!-- Slide 6: Clinic Directory -->
+                        <div class="carousel-slide" data-index="6" data-type="image">
+                          <img src="Images/AI skinwise/Clinics.png" alt="Dermatology Clinics Directory" loading="lazy">
+                        </div>
+                        <!-- Slide 7: Patient Homepage -->
+                        <div class="carousel-slide" data-index="7" data-type="image">
+                          <img src="Images/AI skinwise/User - Homepage.png" alt="User Dashboard & Homepage" loading="lazy">
+                        </div>
+                        <!-- Slide 8: Diseases Library -->
+                        <div class="carousel-slide" data-index="8" data-type="image">
+                          <img src="Images/AI skinwise/User - Diseases.png" alt="Skin Diseases Library" loading="lazy">
+                        </div>
+                        <!-- Slide 9: Specialist Inquiries -->
+                        <div class="carousel-slide" data-index="9" data-type="image">
+                          <img src="Images/AI skinwise/Message Interface.png" alt="Specialist Consultation Messages" loading="lazy">
+                        </div>
+                        <!-- Slide 10: Chat Conversation -->
+                        <div class="carousel-slide" data-index="10" data-type="image">
+                          <img src="Images/AI skinwise/Message Interface - Conversation.png" alt="Specialist Direct Chat Conversation" loading="lazy">
+                        </div>
+                        <!-- Slide 11: Notifications -->
+                        <div class="carousel-slide" data-index="11" data-type="image">
+                          <img src="Images/AI skinwise/User - Notification.png" alt="Health & Appointment Notifications" loading="lazy">
+                        </div>
+                        <!-- Slide 12: Profile -->
+                        <div class="carousel-slide" data-index="12" data-type="image">
+                          <img src="Images/AI skinwise/User - Profile.png" alt="User Profile Settings" loading="lazy">
+                        </div>
+                      </div>
+
+                      <!-- Carousel Navigation Buttons -->
+                      <button class="carousel-nav-btn prev-btn" id="carouselPrevBtn" type="button" aria-label="Previous screenshot">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+                      </button>
+                      <button class="carousel-nav-btn next-btn" id="carouselNextBtn" type="button" aria-label="Next screenshot">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                      </button>
+
+                      <!-- Tap Hint Overlay -->
+                      <div class="carousel-tap-hint">
+                        <span>🔍 Tap to view fullscreen</span>
+                      </div>
+                    </div>
+
+                    <!-- Dots Indicator Bar -->
+                    <div class="carousel-indicator-bar" id="carouselIndicators">
+                      <!-- Generated dynamically by projects-showcase.js -->
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right Column: Project Description & Metadata -->
+                <div class="project-info-col">
+                  <p class="project-long-desc">
+                    A mobile application powered by an AI machine learning system for accurate detection and classification of skin diseases. Leverages deep learning models and full-stack web technologies for medical diagnosis support.
+                  </p>
+
+                  <div class="project-features-section">
+                    <h3 class="project-features-heading">KEY DELIVERABLES &amp; FEATURES</h3>
+                    <ul class="project-features-list">
+                      <li>
+                        <span class="feature-arrow">&rarr;</span>
+                        <span>Deep learning model trained for multi-class skin disease classification.</span>
+                      </li>
+                      <li>
+                        <span class="feature-arrow">&rarr;</span>
+                        <span>Cross-platform mobile app built with Flutter for accessible diagnosis support.</span>
+                      </li>
+                      <li>
+                        <span class="feature-arrow">&rarr;</span>
+                        <span>Python-based inference pipeline integrated with the mobile front end.</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="project-meta-box">
+                    <div class="meta-box-col">
+                      <span class="meta-box-label">ROLE</span>
+                      <strong class="meta-box-value">Project Manager</strong>
+                    </div>
+                    <div class="meta-box-col">
+                      <span class="meta-box-label">CATEGORY</span>
+                      <strong class="meta-box-value">Mobile</strong>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
         </article>
 
@@ -734,6 +884,28 @@
     </div>
   </dialog>
 
+  <!-- ─────────────────────────────────────────────────────────────────────────────
+       Modal Lightbox for Project Screenshots Inspection
+  ───────────────────────────────────────────────────────────────────────────── -->
+  <dialog class="project-lightbox-modal" id="projectLightboxModal">
+    <div class="lightbox-header">
+      <span class="lightbox-title" id="lightboxTitle">Project Preview</span>
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span class="lightbox-counter" id="lightboxCounter">1 / 12</span>
+        <button class="lightbox-close-btn" id="lightboxCloseBtn" type="button" aria-label="Close modal">&times;</button>
+      </div>
+    </div>
+    <div class="lightbox-body">
+      <button class="lightbox-nav-btn prev-btn" id="lightboxPrevBtn" type="button" aria-label="Previous image">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <img class="lightbox-img" id="lightboxImg" src="" alt="Expanded project preview">
+      <button class="lightbox-nav-btn next-btn" id="lightboxNextBtn" type="button" aria-label="Next image">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </dialog>
+
   <!-- Toast Notification element -->
   <div class="toast-msg" role="status" aria-live="polite"></div>
 
@@ -743,6 +915,7 @@
   <script src="ribbons.js"></script>
   <script src="gooey-nav.js"></script>
   <script src="shiny-text.js"></script>
+  <script src="projects-showcase.js"></script>
   <script type="module" src="RippleDistortion.js"></script>
 </body>
 </html>
