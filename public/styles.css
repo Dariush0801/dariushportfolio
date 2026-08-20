@@ -2190,7 +2190,7 @@ body.rail-collapsed .sidebar-peeker:hover {
     font-weight: 700;
     color: var(--text-primary);
     line-height: 1;
-    margin-left: 2px;
+    margin-right: 2px;
   }
 
   .mobile-visitor-pill .nav-visitor-label {

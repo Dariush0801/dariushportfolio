@@ -453,10 +453,20 @@
           return;
         }
 
-        // Show count across all desktop & mobile labels
+        // Show count across desktop & mobile labels (on mobile, count only appears if total >= 3)
         countEls.forEach(c => {
-          c.style.display = 'inline';
-          c.textContent = String(total);
+          if (c.id === 'mobileVisitorCount') {
+            if (total >= 3) {
+              c.style.display = 'inline';
+              c.textContent = String(total);
+            } else {
+              c.style.display = 'none';
+              c.textContent = '';
+            }
+          } else {
+            c.style.display = 'inline';
+            c.textContent = String(total);
+          }
         });
         labelEls.forEach(l => {
           if (l.id === 'mobileVisitorLabel') {
