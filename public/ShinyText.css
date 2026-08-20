@@ -1,0 +1,57 @@
+:root {
+  --shiny-color: #b5b5b5;
+  --shiny-shine-color: #ffffff;
+  --shiny-spread: 120deg;
+  --shiny-speed: 2s;
+}
+
+body.light-mode .shiny-text {
+  background-image: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: #000000 !important;
+  color: #000000 !important;
+  animation: none !important;
+}
+
+.shiny-text {
+  display: inline-block;
+  background-image: linear-gradient(
+    var(--shiny-spread, 120deg),
+    var(--shiny-color, #b5b5b5) 0%,
+    var(--shiny-color, #b5b5b5) 35%,
+    var(--shiny-shine-color, #ffffff) 50%,
+    var(--shiny-color, #b5b5b5) 65%,
+    var(--shiny-color, #b5b5b5) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shinyTextSweep var(--shiny-speed, 2s) linear infinite;
+  will-change: background-position;
+}
+
+@keyframes shinyTextSweep {
+  0% {
+    background-position: 150% center;
+  }
+  100% {
+    background-position: -50% center;
+  }
+}
+
+.shiny-text.direction-right {
+  animation-direction: reverse;
+}
+
+.shiny-text.pause-on-hover:hover {
+  animation-play-state: paused;
+}
+
+.shiny-text.shiny-disabled {
+  background-image: none !important;
+  -webkit-text-fill-color: currentColor !important;
+  color: var(--text-primary);
+  animation: none !important;
+}

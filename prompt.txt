@@ -1,0 +1,36 @@
+On the Home page, change the phrase “Explore My Work” to **“About Me.” Also, add a short description stating: Aspiring IT professional focused on UI/UX, automation, AI-assisted development, and IT support.”**
+
+Change Web Designer” to “UI/UX Designer.”
+
+On the About page, in the Skills table, change the heading “Skills” to **“Technical Skills.” Reduce the margins/padding inside each skill box and make the table scrollable without changing the overall structure of the main skills table.
+
+Remove “Branding”, "Graphice Design" and “Leadership” from the skills list. Add the following technical skills:
+
+* Microsoft Excel
+* HTML/CSS
+* Basic Machine Learning
+* Git
+* Google Workspace
+* Canva
+* Figma
+* Adobe Photoshop
+
+In the Description table, change the description to:
+
+“Driven to deliver innovative and practical solutions tailored to client needs.”
+
+Below the Description table, add another table titled **“Core Competencies.”** Include the following in bullet-point format:
+
+* Problem-Solving
+* Adaptability
+* Attention to Detail
+* Creativity
+* Teamwork
+* Continuous Learning
+
+The Core Competencies table should also be scrollable if necessary.
+
+Finally, make sure the height of the Description and Core Competencies tables is equivalent to the combined height of the Technical Skills table.
+
+At the footer, Put my name at left side "Dariush Dave Aguilar" and short description below saying "Information 
+Technology Student - Quezon City University" at the middle bottom saying 2026 Dariush Dave Aguilar. All right reserved."
