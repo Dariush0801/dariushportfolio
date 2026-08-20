@@ -257,6 +257,144 @@
       ───────────────────────────────────────────────────────────────────────────── -->
       <div class="feed-container">
 
+        <!-- Feed Card 1: Introduction Highlight (First in All Highlights) -->
+        <article class="feed-card" data-category="about intro" style="grid-template-columns: 1fr;">
+          <div class="feed-card-body" style="width: 100%;">
+            <header class="cert-feed-header" style="margin-bottom: 12px;">
+              <div>
+                <p style="font-size: 13.5px; color: var(--text-secondary); margin: 0;">4th-Year Information Technology Student · Quezon City University</p>
+              </div>
+            </header>
+
+            <p class="post-text-sans" style="line-height: 1.7; color: var(--text-primary); font-size: 14.5px; margin: 0 0 14px;">
+              I am a 4th-year IT student at Quezon City University with a strong interest in web development, graphic design, and web design. I have experience creating responsive and user-friendly websites, designing engaging visual content, and developing digital solutions that combine creativity and technology. My technical skills, creative mindset, and attention to detail allow me to build functional, visually appealing, and impactful digital experiences.
+            </p>
+
+            <footer class="post-interactions-bar">
+              <button class="interaction-item btn-like" type="button" aria-label="Like post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                <span class="like-count" data-count="426">426</span>
+              </button>
+              <button class="interaction-item btn-share" type="button" aria-label="Share post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                <span>Share</span>
+              </button>
+              <button class="interaction-item btn-save" type="button" aria-label="Save post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                <span>Save</span>
+              </button>
+            </footer>
+          </div>
+        </article>
+
+        <!-- Feed Card: Certifications & Technical Credentials -->
+        <article class="feed-card" data-category="certificates" style="grid-template-columns: 1fr;">
+          <div class="cert-feed-wrapper">
+            <header class="cert-feed-header">
+              <div>
+                <h2 class="cert-feed-title">Certifications &amp; Credentials</h2>
+                <p style="font-size: 13.5px; color: var(--text-secondary); margin-top: 4px;">Continuous learning milestones across Visual Design, Cloud Security, SQL, and Software Development.</p>
+              </div>
+            </header>
+
+            <!-- React Bits BounceCards Showcase (Non-looping GSAP Bounce Animation & Hover Push) -->
+            <div class="cert-bounce-stage">
+              <div class="bounceCardsContainer cert-bounce-container" id="certBounceCards">
+                <div class="card card-0 cert-thumbnail-card" data-img="Certification/Cert%201.png" data-title="CyberSecure U: Defending the Digital World — AWS Learning Club (Oct 2025)">
+                  <img class="image" src="Certification/Cert%201.png" alt="CyberSecure U — AWS Learning Club" onerror="this.onerror=null; this.src='assets/certificates/Cert%201.png';">
+                  <div class="card-overlay">
+                    <span class="cert-issuer">AWS Learning Club</span>
+                    <span class="cert-name">CyberSecure U (2025)</span>
+                    <span class="cert-hint">Click to inspect</span>
+                  </div>
+                </div>
+
+                <div class="card card-1 cert-thumbnail-card" data-img="Certification/Cert%202.png" data-title="AI Tools for UX/UI &amp; Web Designers — Udemy (Apr 2025)">
+                  <img class="image" src="Certification/Cert%202.png" alt="AI Tools for UX/UI — Udemy" onerror="this.onerror=null; this.src='assets/certificates/Cert%202.png';">
+                  <div class="card-overlay">
+                    <span class="cert-issuer">Udemy</span>
+                    <span class="cert-name">AI Tools for UX/UI</span>
+                    <span class="cert-hint">Click to inspect</span>
+                  </div>
+                </div>
+
+                <div class="card card-2 cert-thumbnail-card" data-img="Certification/Cert%203.png" data-title="JavaScript Mastery From Basics to Advanced 2025 — Udemy (Apr 2025)">
+                  <img class="image" src="Certification/Cert%203.png" alt="JavaScript Mastery — Udemy" onerror="this.onerror=null; this.src='assets/certificates/Cert%203.png';">
+                  <div class="card-overlay">
+                    <span class="cert-issuer">Udemy</span>
+                    <span class="cert-name">JavaScript Mastery 2025</span>
+                    <span class="cert-hint">Click to inspect</span>
+                  </div>
+                </div>
+
+                <div class="card card-3 cert-thumbnail-card" data-img="Certification/Cert%204.png" data-title="GIT, GitLab, GitHub Fundamentals for Software Developers — Udemy (Apr 2025)">
+                  <img class="image" src="Certification/Cert%204.png" alt="GIT &amp; GitHub Fundamentals — Udemy" onerror="this.onerror=null; this.src='assets/certificates/Cert%204.png';">
+                  <div class="card-overlay">
+                    <span class="cert-issuer">Udemy</span>
+                    <span class="cert-name">Git &amp; GitHub</span>
+                    <span class="cert-hint">Click to inspect</span>
+                  </div>
+                </div>
+
+                <div class="card card-4 cert-thumbnail-card" data-img="Certification/Cert%205.png" data-title="Professional Certificate in Project Management — Udemy (Apr 2025)">
+                  <img class="image" src="Certification/Cert%205.png" alt="Project Management — Udemy" onerror="this.onerror=null; this.src='assets/certificates/Cert%205.png';">
+                  <div class="card-overlay">
+                    <span class="cert-issuer">Udemy</span>
+                    <span class="cert-name">Project Management</span>
+                    <span class="cert-hint">Click to inspect</span>
+                  </div>
+                </div>
+
+                <div class="card card-5 cert-thumbnail-card" data-img="Certification/Cert%206.png" data-title="SQL Intermediate — Sololearn (Apr 2025)">
+                  <img class="image" src="Certification/Cert%206.png" alt="SQL Intermediate — Sololearn" onerror="this.onerror=null; this.src='assets/certificates/Cert%206.png';">
+                  <div class="card-overlay">
+                    <span class="cert-issuer">Sololearn</span>
+                    <span class="cert-name">SQL Intermediate</span>
+                    <span class="cert-hint">Click to inspect</span>
+                  </div>
+                </div>
+
+                <div class="card card-6 cert-thumbnail-card" data-img="Certification/Cert%207.png" data-title="Introduction to SQL — Sololearn (Mar 2025)">
+                  <img class="image" src="Certification/Cert%207.png" alt="Introduction to SQL — Sololearn" onerror="this.onerror=null; this.src='assets/certificates/Cert%207.png';">
+                  <div class="card-overlay">
+                    <span class="cert-issuer">Sololearn</span>
+                    <span class="cert-name">Introduction to SQL</span>
+                    <span class="cert-hint">Click to inspect</span>
+                  </div>
+                </div>
+
+                <div class="card card-7 cert-thumbnail-card" data-img="Certification/Cert%208.png" data-title="TESDA NC III — Visual Graphic Design (2023–2028)">
+                  <img class="image" src="Certification/Cert%208.png" alt="TESDA NC III — Visual Graphic Design" onerror="this.onerror=null; this.src='assets/certificates/Cert%208.png';">
+                  <div class="card-overlay">
+                    <span class="cert-issuer">TESDA NC III</span>
+                    <span class="cert-name">Visual Graphic Design</span>
+                    <span class="cert-hint">Click to inspect</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-stage-footer" style="justify-content: flex-end;">
+              <span style="font-size: 11.5px; color: var(--text-muted); font-weight: 500;">Credentials Stacked</span>
+            </div>
+
+            <footer class="post-interactions-bar" style="margin-top: 18px;">
+              <button class="interaction-item btn-like" type="button" aria-label="Like post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                <span class="like-count" data-count="352">352</span>
+              </button>
+              <button class="interaction-item btn-share" type="button" aria-label="Share post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                <span>Share</span>
+              </button>
+              <button class="interaction-item btn-save" type="button" aria-label="Save post">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                <span>Save</span>
+              </button>
+            </footer>
+          </div>
+        </article>
+
         <!-- Feed Card: Skin Disease Detection System Project Showcase -->
         <article class="feed-card project-feed-card" data-category="projects" id="projectSkinwise">
           <div class="project-card-container">
@@ -275,10 +413,10 @@
 
               <div class="project-bottom-row">
                 <div class="project-tags">
-                  <span class="project-tag">Android Studio</span>
+                  <span class="project-tag">Figma</span>
                   <span class="project-tag">Flutter</span>
                   <span class="project-tag">Python</span>
-                  <span class="project-tag tag-more" title="Deep Learning · TensorFlow · Node.js">+1</span>
+                  <span class="project-tag tag-more" title="Deep Learning · TensorFlow · Android Studio">+1</span>
                 </div>
                 <button class="project-dropdown-btn" id="projectToggleBtn" type="button" aria-expanded="false" aria-label="Toggle project details" title="View Project Details">
                   <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
@@ -416,144 +554,6 @@
 
               </div>
             </div>
-          </div>
-        </article>
-
-        <!-- Feed Card 1: Introduction Highlight (First in All Highlights) -->
-        <article class="feed-card" data-category="about intro" style="grid-template-columns: 1fr;">
-          <div class="feed-card-body" style="width: 100%;">
-            <header class="cert-feed-header" style="margin-bottom: 12px;">
-              <div>
-                <p style="font-size: 13.5px; color: var(--text-secondary); margin: 0;">4th-Year Information Technology Student · Quezon City University</p>
-              </div>
-            </header>
-
-            <p class="post-text-sans" style="line-height: 1.7; color: var(--text-primary); font-size: 14.5px; margin: 0 0 14px;">
-              I am a 4th-year IT student at Quezon City University with a strong interest in web development, graphic design, and web design. I have experience creating responsive and user-friendly websites, designing engaging visual content, and developing digital solutions that combine creativity and technology. My technical skills, creative mindset, and attention to detail allow me to build functional, visually appealing, and impactful digital experiences.
-            </p>
-
-            <footer class="post-interactions-bar">
-              <button class="interaction-item btn-like" type="button" aria-label="Like post">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                <span class="like-count" data-count="426">426</span>
-              </button>
-              <button class="interaction-item btn-share" type="button" aria-label="Share post">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
-                <span>Share</span>
-              </button>
-              <button class="interaction-item btn-save" type="button" aria-label="Save post">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-                <span>Save</span>
-              </button>
-            </footer>
-          </div>
-        </article>
-
-        <!-- Feed Card: Certifications & Technical Credentials -->
-        <article class="feed-card" data-category="certificates" style="grid-template-columns: 1fr;">
-          <div class="cert-feed-wrapper">
-            <header class="cert-feed-header">
-              <div>
-                <h2 class="cert-feed-title">Certifications &amp; Credentials</h2>
-                <p style="font-size: 13.5px; color: var(--text-secondary); margin-top: 4px;">Continuous learning milestones across Visual Design, Cloud Security, SQL, and Software Development.</p>
-              </div>
-            </header>
-
-            <!-- React Bits BounceCards Showcase (Non-looping GSAP Bounce Animation & Hover Push) -->
-            <div class="cert-bounce-stage">
-              <div class="bounceCardsContainer cert-bounce-container" id="certBounceCards">
-                <div class="card card-0 cert-thumbnail-card" data-img="Certification/Cert%201.png" data-title="CyberSecure U: Defending the Digital World — AWS Learning Club (Oct 2025)">
-                  <img class="image" src="Certification/Cert%201.png" alt="CyberSecure U — AWS Learning Club" onerror="this.onerror=null; this.src='assets/certificates/Cert%201.png';">
-                  <div class="card-overlay">
-                    <span class="cert-issuer">AWS Learning Club</span>
-                    <span class="cert-name">CyberSecure U (2025)</span>
-                    <span class="cert-hint">Click to inspect</span>
-                  </div>
-                </div>
-
-                <div class="card card-1 cert-thumbnail-card" data-img="Certification/Cert%202.png" data-title="AI Tools for UX/UI &amp; Web Designers — Udemy (Apr 2025)">
-                  <img class="image" src="Certification/Cert%202.png" alt="AI Tools for UX/UI — Udemy" onerror="this.onerror=null; this.src='assets/certificates/Cert%202.png';">
-                  <div class="card-overlay">
-                    <span class="cert-issuer">Udemy</span>
-                    <span class="cert-name">AI Tools for UX/UI</span>
-                    <span class="cert-hint">Click to inspect</span>
-                  </div>
-                </div>
-
-                <div class="card card-2 cert-thumbnail-card" data-img="Certification/Cert%203.png" data-title="JavaScript Mastery From Basics to Advanced 2025 — Udemy (Apr 2025)">
-                  <img class="image" src="Certification/Cert%203.png" alt="JavaScript Mastery — Udemy" onerror="this.onerror=null; this.src='assets/certificates/Cert%203.png';">
-                  <div class="card-overlay">
-                    <span class="cert-issuer">Udemy</span>
-                    <span class="cert-name">JavaScript Mastery 2025</span>
-                    <span class="cert-hint">Click to inspect</span>
-                  </div>
-                </div>
-
-                <div class="card card-3 cert-thumbnail-card" data-img="Certification/Cert%204.png" data-title="GIT, GitLab, GitHub Fundamentals for Software Developers — Udemy (Apr 2025)">
-                  <img class="image" src="Certification/Cert%204.png" alt="GIT &amp; GitHub Fundamentals — Udemy" onerror="this.onerror=null; this.src='assets/certificates/Cert%204.png';">
-                  <div class="card-overlay">
-                    <span class="cert-issuer">Udemy</span>
-                    <span class="cert-name">Git &amp; GitHub</span>
-                    <span class="cert-hint">Click to inspect</span>
-                  </div>
-                </div>
-
-                <div class="card card-4 cert-thumbnail-card" data-img="Certification/Cert%205.png" data-title="Professional Certificate in Project Management — Udemy (Apr 2025)">
-                  <img class="image" src="Certification/Cert%205.png" alt="Project Management — Udemy" onerror="this.onerror=null; this.src='assets/certificates/Cert%205.png';">
-                  <div class="card-overlay">
-                    <span class="cert-issuer">Udemy</span>
-                    <span class="cert-name">Project Management</span>
-                    <span class="cert-hint">Click to inspect</span>
-                  </div>
-                </div>
-
-                <div class="card card-5 cert-thumbnail-card" data-img="Certification/Cert%206.png" data-title="SQL Intermediate — Sololearn (Apr 2025)">
-                  <img class="image" src="Certification/Cert%206.png" alt="SQL Intermediate — Sololearn" onerror="this.onerror=null; this.src='assets/certificates/Cert%206.png';">
-                  <div class="card-overlay">
-                    <span class="cert-issuer">Sololearn</span>
-                    <span class="cert-name">SQL Intermediate</span>
-                    <span class="cert-hint">Click to inspect</span>
-                  </div>
-                </div>
-
-                <div class="card card-6 cert-thumbnail-card" data-img="Certification/Cert%207.png" data-title="Introduction to SQL — Sololearn (Mar 2025)">
-                  <img class="image" src="Certification/Cert%207.png" alt="Introduction to SQL — Sololearn" onerror="this.onerror=null; this.src='assets/certificates/Cert%207.png';">
-                  <div class="card-overlay">
-                    <span class="cert-issuer">Sololearn</span>
-                    <span class="cert-name">Introduction to SQL</span>
-                    <span class="cert-hint">Click to inspect</span>
-                  </div>
-                </div>
-
-                <div class="card card-7 cert-thumbnail-card" data-img="Certification/Cert%208.png" data-title="TESDA NC III — Visual Graphic Design (2023–2028)">
-                  <img class="image" src="Certification/Cert%208.png" alt="TESDA NC III — Visual Graphic Design" onerror="this.onerror=null; this.src='assets/certificates/Cert%208.png';">
-                  <div class="card-overlay">
-                    <span class="cert-issuer">TESDA NC III</span>
-                    <span class="cert-name">Visual Graphic Design</span>
-                    <span class="cert-hint">Click to inspect</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="cert-stage-footer" style="justify-content: flex-end;">
-              <span style="font-size: 11.5px; color: var(--text-muted); font-weight: 500;">Credentials Stacked</span>
-            </div>
-
-            <footer class="post-interactions-bar" style="margin-top: 18px;">
-              <button class="interaction-item btn-like" type="button" aria-label="Like post">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                <span class="like-count" data-count="352">352</span>
-              </button>
-              <button class="interaction-item btn-share" type="button" aria-label="Share post">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
-                <span>Share</span>
-              </button>
-              <button class="interaction-item btn-save" type="button" aria-label="Save post">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-                <span>Save</span>
-              </button>
-            </footer>
           </div>
         </article>
 
