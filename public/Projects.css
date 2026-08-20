@@ -187,7 +187,7 @@
 
 .project-expanded-grid {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 215px 1fr;
   gap: 28px;
   align-items: start;
 }
@@ -199,7 +199,7 @@
   }
 }
 
-/* Left Column: 19.5:9 Mobile Media Preview Carousel */
+/* Left Column: 9:16 Video & Screen Preview Carousel */
 .project-media-col {
   display: flex;
   flex-direction: column;
@@ -209,7 +209,7 @@
 
 .project-device-frame {
   width: 100%;
-  max-width: 200px;
+  max-width: 215px;
   border-radius: 14px;
   background: #090a0d;
   border: 1px solid var(--border-strong, rgba(255, 255, 255, 0.14));
@@ -223,7 +223,7 @@
 .project-carousel {
   position: relative;
   width: 100%;
-  aspect-ratio: 9 / 19.5;
+  aspect-ratio: 9 / 16;
   overflow: hidden;
   background: #000000;
   cursor: pointer;
