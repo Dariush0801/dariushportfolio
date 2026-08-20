@@ -122,13 +122,20 @@
     });
 
     const dots = indicatorsWrap.querySelectorAll('.indicator-dot');
-
     function goToSlide(index) {
       currentSlide = (index + slidesData.length) % slidesData.length;
       track.style.transform = `translateX(-${currentSlide * 100}%)`;
 
       dots.forEach((d, idx) => {
         d.classList.toggle('active', idx === currentSlide);
+      });
+
+      // Reset scroll position on other slides
+      const allSlides = track.querySelectorAll('.carousel-slide');
+      allSlides.forEach((s, idx) => {
+        if (idx !== currentSlide) {
+          s.scrollTop = 0;
+        }
       });
 
       // Handle video behavior
@@ -181,12 +188,6 @@
 
       if (isExpanded) {
         goToSlide(0);
-        if (video) {
-          try {
-            video.currentTime = 0;
-            video.play().catch(() => {});
-          } catch (e) {}
-        }
         startAutoPlay();
       } else {
         stopAutoPlay();
@@ -228,8 +229,14 @@
       });
     }
 
-    // Pause on hover
+    // Drag-to-scroll support for slides with tall mockups
+    let isMouseDown = false;
+    let startY = 0;
+    let scrollStartTop = 0;
+    let hasDragged = false;
+
     if (carousel) {
+      // Pause on hover
       carousel.addEventListener('mouseenter', () => {
         isHovering = true;
         stopAutoPlay();
@@ -237,12 +244,42 @@
 
       carousel.addEventListener('mouseleave', () => {
         isHovering = false;
+        isMouseDown = false;
         startAutoPlay();
       });
 
-      // Tap / Click to open fullscreen lightbox
+      carousel.addEventListener('mousedown', (e) => {
+        if (e.target.closest('.carousel-nav-btn')) return;
+        const slide = e.target.closest('.carousel-slide');
+        if (!slide) return;
+        isMouseDown = true;
+        hasDragged = false;
+        startY = e.pageY;
+        scrollStartTop = slide.scrollTop;
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        if (!isMouseDown) return;
+        const activeSlide = track.querySelector(`.carousel-slide[data-index="${currentSlide}"]`);
+        if (!activeSlide) return;
+        const walk = (e.pageY - startY) * 1.5;
+        if (Math.abs(walk) > 4) {
+          hasDragged = true;
+        }
+        activeSlide.scrollTop = scrollStartTop - walk;
+      });
+
+      window.addEventListener('mouseup', () => {
+        isMouseDown = false;
+      });
+
+      // Tap / Click to open fullscreen lightbox (only if not dragging)
       carousel.addEventListener('click', (e) => {
         if (e.target.closest('.carousel-nav-btn')) return;
+        if (hasDragged) {
+          hasDragged = false;
+          return;
+        }
         openLightbox(currentSlide);
       });
     }
