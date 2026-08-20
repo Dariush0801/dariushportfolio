@@ -3,7 +3,7 @@ import './GooeyNav.css';
 
 const GooeyNav = ({
   items = [
-    { label: "Feed", href: "#all" },
+    { label: "Home", href: "#all" },
     { label: "Projects", href: "#projects" },
     { label: "Certificates", href: "#certificates" },
     { label: "Skills", href: "#skills" },
